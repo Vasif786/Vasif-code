@@ -10,7 +10,6 @@ rootProject.ext.rootDir = "$rootDir"
 buildscript {
     repositories {
         google()
-        jcenter()
         mavenCentral()
     }
     dependencies {
