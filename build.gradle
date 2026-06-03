@@ -31,6 +31,7 @@ allprojects {
     configurations.configureEach {
         resolutionStrategy {
             force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
+            failOnVersionConflict = false
         }
     }
     repositories {
