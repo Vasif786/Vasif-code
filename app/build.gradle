@@ -167,6 +167,16 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
 
     implementation 'me.jfenn:crasher:0.0.2'
+    
+    // Dependency constraints to resolve AAR metadata conflicts
+    constraints {
+        implementation("com.google.guava:guava:32.1.3-android") {
+            because("Explicitly pin guava version to avoid conflicts")
+        }
+        implementation("androidx.appcompat:appcompat:1.6.1") {
+            because("Pin appcompat version for compatibility")
+        }
+    }
 }
 
 clean {
