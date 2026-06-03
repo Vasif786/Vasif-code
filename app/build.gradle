@@ -32,10 +32,6 @@ android {
     compileSdkVersion 34
     ndkVersion System.getenv("JITPACK_NDK_VERSION") ?: project.properties.ndkVersion
 
-    dexOptions {
-        javaMaxHeapSize "4G"
-    }
-
     defaultConfig {
         applicationId "com.termux"
         minSdkVersion project.properties.minSdkVersion.toInteger()
