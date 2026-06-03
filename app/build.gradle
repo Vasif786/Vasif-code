@@ -176,6 +176,15 @@ dependencies {
         implementation("androidx.appcompat:appcompat:1.6.1") {
             because("Pin appcompat version for compatibility")
         }
+        implementation("androidx.core:core:1.12.0") {
+            because("Pin androidx.core for minSdkVersion compatibility")
+        }
+        implementation("com.google.android.material:material:1.10.0") {
+            because("Ensure material design library version consistency")
+        }
+        implementation("androidx.constraintlayout:constraintlayout:2.1.4") {
+            because("Ensure constraint layout version consistency")
+        }
     }
 }
 
