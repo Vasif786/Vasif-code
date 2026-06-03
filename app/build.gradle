@@ -117,6 +117,7 @@ android {
     }
     lint {
         lintConfig file('../lint.xml')
+        disable 'InvalidPackage'
     }
     namespace 'vn.vhn.vhscode'
     buildFeatures {
@@ -266,4 +267,3 @@ afterEvaluate {
 }
 
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
-
