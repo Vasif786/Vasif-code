@@ -41,6 +41,7 @@
         <activity
             android:name=".root.EditorHostActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|keyboardHidden|keyboard|navigation|fontScale|uiMode"
+            android:exported="true"
             android:resizeableActivity="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +51,7 @@
         </activity>
         <activity
             android:name=".GithubReleaseInstallActivity"
+            android:exported="false"
             android:launchMode="singleInstance" />
 
         <service
